@@ -47,5 +47,53 @@ if (davomat <= 80) {
 } else {
   ("Imtihondan o`tmadi");
 }
-let oquvchiBali = 76;
-let oquvchiDavomati = 85;
+//=========--------==--=---========-----------==--=-==-=--
+let buyurtmaSummasi = 120000;
+let premiumObuna = false;
+
+if (buyurtmaSummasi >= 100000 || premiumObuna) {
+  console.log("Bepul yetkazib berish");
+} else {
+  console.log("Yetkazib berish pullik");
+}
+//==============----====---=--=--=====----=--====--=--==-==-=--=-
+let mahsulotNarxi = 200000;
+let chegirmaKuponi = true;
+let yakuniySumma;
+
+if (chegirmaKuponi) {
+  yakuniySumma = mahsulotNarxi - mahsulotNarxi * 0.15;
+  console.log("Yakuniy summa (chegirma bilan): " + yakuniySumma + " so‘m");
+} else {
+  yakuniySumma = mahsulotNarxi;
+  console.log("Yakuniy summa (chegirmasiz): " + yakuniySumma + " so‘m");
+}
+//-----======----==========-----========--======---==--=======---========---=--=-==-
+let username = "";
+let age = 20;
+
+if (username === "") {
+  console.log("Ismingizni kiriting");
+} else {
+  console.log("Xush kelibsiz");
+}
+console.log(Boolean(age));
+//========------====-------------------==-------=--=-=--=--------=========----
+let number = 14;
+
+// 2 ga bo'lgandagi qoldiq 0 ga teng bo'lsa - juft son
+if (number % 2 === 0) {
+  console.log("Juft son");
+} else {
+  console.log("Toq son");
+}
+//==========------====--==----==========--==--=-==-=====---
+let yoshi = 16;
+let otaAnasiningRuxsati = false;
+let chiptaBorligi = true;
+
+if ((yoshi >= 18 || otaAnasiningRuxsati) && chiptaBorligi) {
+  console.log("Kino zaliga kirish mumkin");
+} else {
+  console.log("Kirish mumkin emas");
+}
